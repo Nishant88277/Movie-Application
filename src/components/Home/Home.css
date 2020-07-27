@@ -1,0 +1,47 @@
+.rmdb-home {
+    margin-bottom: 500px;
+}
+
+.rmdb-home-grid {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.rmdb_end {
+    text-align: center;
+    font-family: 'Abel', sans-serif;
+    font-size: 30px;
+    line-height: 26px;
+    font-weight: 600;
+    margin-top: 50px;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.rdt {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.rdt input {
+    padding: 10px;
+    font-weight: 700;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR68psFhUWJD_R1tRumuizsDfc5aRz-c_scKS-BA5S0Q7q1LBn0zA&s) no-repeat 160px;
+    background-size: 20px;
+    border: 1px solid #ddd;
+    float: right;
+    margin-top: 40px;
+}
+
+.rdtPicker {
+    right: 18px !important;
+    top: 76px;
+}
