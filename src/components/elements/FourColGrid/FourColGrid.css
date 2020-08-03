@@ -11,10 +11,11 @@
 }
 
 .rmdb-grid-element {
-    background: #353535;
+    background: #e4e4e4;
     max-height: 400px;
     animation: animateGrid 0.5s;
     position: relative;
+    overflow: hidden;
 }
 
 @keyframes animateGrid {
@@ -27,8 +28,12 @@
 }
 
 @media screen and (max-width: 720px) {
+    .rmdb-grid-element {
+        max-height: 500px;
+        overflow: unset;
+    }
     .rmdb-grid-content {
-        grid-template-columns: auto auto;
+        grid: none;
     }
 
     .rmdb-grid-element:nth-child(2n+2) {

@@ -1,18 +1,20 @@
 .rmdb-searchbar {
     width: 100%;
     height: 105px;
-    background: #1c1c1c;
+    background: #e8e8e8;
     position: relative;
     padding: 25px 20px 0 20px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     color: #fff;
+    overflow-x: hidden;
 }
 
 .rmdb-searchbar-content {
     max-width: 1280px;
     width: 100%;
     height: 55px;
-    background: #353535;
+    background: #ffffff;
     margin: 0 auto;
     border-radius: 40px;
     position: relative;
@@ -23,19 +25,20 @@
     position: absolute;
     left: 20px;
     top: 12px;
-    color: #fff;
+    color: #000;
 }
 
 .rmdb-searchbar-input {
     font-family: 'Abel', sans-serif;
     font-size: 38px;
+    font-weight: 900;
     position: absolute;
     left: 70px;
     top: 7px;
     border: 0;
     background: transparent;
     height: 40px;
-    color: #fff;
+    color: #000;
     width: 90%;
 }
 

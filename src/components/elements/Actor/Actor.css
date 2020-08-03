@@ -16,19 +16,42 @@
 .rmdb-actor-name {
     font-family: 'Abel', sans-serif;
     font-size: 22px;
-    color: #fff;
+    color: #383838;
     float: left;
     margin: 10px 20px;
     width: 40%;
     box-sizing: border-box;
+    font-weight: 900;
 }
 
 .rmdb-actor-character {
     font-family: 'Abel', sans-serif;
     font-size: 18px;
-    color: #fff;
+    color: #383838;
     float: left;
     margin: 0 20px 10px 20px;
     width: 40%;
     box-sizing: border-box;
+}
+
+@media screen and (max-width: 720px) {
+    .rmdb-actor img {
+        width: 100%;
+        height: 360px;
+        float: none;
+        object-fit: cover;
+        object-position: top;
+    }
+    .rmdb-actor-name {
+        float: none;
+        margin: 10px;
+        width: 87%;
+        display: block;
+    }
+    .rmdb-actor-character {
+        display: block;
+        float: none;
+        margin: 10px 10px 10px 10px;
+        width: 86%;
+    }
 }

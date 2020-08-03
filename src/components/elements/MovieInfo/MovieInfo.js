@@ -1,20 +1,12 @@
 import React, {Component} from 'react';
 import FontAwesome from 'react-fontawesome';
-import {API_KEY, API_URL, IMAGE_BASE_URL, POSTER_SIZE} from "../../../config";
+import {API_KEY, API_URL, IMAGE_BASE_URL, POSTER_SIZE, BACKDROP_SIZE} from "../../../config";
 import MovieThumb from "../MovieThumb/MovieThumb";
 import './MovieInfo.css';
 import ReactPlayer from 'react-player';
 import Modal from 'react-modal';
 
 class MovieInfo extends Component {
-    customStyle = {
-        width: "640px",
-        height: "360px",
-        position: "absolute",
-        top: "80px",
-        left: "50%",
-        marginLeft: "-380px"
-    };
     buttonStyle = {
         background: "none",
         border: "none",
@@ -67,7 +59,9 @@ class MovieInfo extends Component {
             //     background: this.props.movie.backdrop_path ? `url('${IMAGE_BASE_URL}${BACKDROP_SIZE}${this.props.movie.backdrop_path}')` : '#000'
             // }}
             <div className="rmdb-movieinfo">
-                <ReactPlayer className="background-video" url={url} controls={false} volume={0} loop={true} playing/>
+                <ReactPlayer class="background-video" style={{
+                    background: this.props.movie.backdrop_path ? `url('${IMAGE_BASE_URL}${BACKDROP_SIZE}${this.props.movie.backdrop_path}')` : '#000'
+                }}/>
                 <div className="rmdb-movieinfo-content">
                     <div className="rmdb-movieinfo-thumb">
                         <MovieThumb
@@ -97,7 +91,7 @@ class MovieInfo extends Component {
                         ariaHideApp={false}
                         className="player"
                     >
-                        <ReactPlayer style={this.customStyle} url={url} controls={true}/>
+                        <ReactPlayer className="VideoPlayer" url={url} controls={true}/>
                         <button style={this.buttonStyle} onClick={this.closeModal}>X</button>
                     </Modal>
 
